@@ -23,5 +23,4 @@ func SendSMS(rec_num, sms_free_sign_name, sms_template_code, sms_param string) (
 	params["sms_param"] = sms_param
 
 	return DoPost(params)
-
 }
