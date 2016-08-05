@@ -21,6 +21,7 @@ func DoPost(m map[string]string) (success bool, response string) {
 	str, err := req.String()
 	if err != nil {
 		fmt.Println("err,", err)
+		return false, str
 	}
 	return true, str
 
